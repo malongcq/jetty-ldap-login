@@ -28,6 +28,13 @@ import org.eclipse.jetty.plus.jaas.callback.ObjectCallback;
 import org.eclipse.jetty.util.log.Log;
 import org.eclipse.jetty.util.log.Logger;
 
+/**
+ * This is an alternative implementation of LDAP login module,
+ * which is like tomcat JAASRealm.
+ * 
+ * @author malong
+ *
+ */
 public class SimpleLdapLoginModule extends AbstractLoginModule 
 {
 	private static final Logger LOG = Log.getLogger(SimpleLdapLoginModule.class);
