@@ -1,4 +1,29 @@
-#summary One-sentence summary of this page.
+#simple configuration example
+
+1. Edit ldap-login.conf and put it into <jetty-home>/etc/
+_ldap-login.conf example:_
+*ldap* 
+{
+    org.eclipse.jetty.plus.jaas.spi.SimpleLdapLoginModule required
+    ldapURL="ldap://10.10.10.10:389"
+    bindDn="uid=admin,ou=admin_groups,dc=example,dc=com"
+    bindPassword="xxx"
+    userBaseDn="ou=people,dc=example,dc=com"
+    userId="uid"
+    userPassword="userPassword"
+    userObjectClass="inetOrgPerson"
+    userRoleName="app"
+
+    roleUserId="uid"
+    roleBaseDn="ou=role_group,dc=example,dc=com"
+    roleName="cn"
+    roleMember="uniqueMember"
+    roleObjectClass="groupOfUniqueNames";
+};
+
+2. Edit <jetty-home>/etc/jetty-jaas.xml
+
+
 
 = Introduction =
 
