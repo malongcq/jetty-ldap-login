@@ -2,9 +2,10 @@
 
 1. Edit ldap-login.conf and put it into [jetty-home]/etc/
 _ldap-login.conf example:_
+
 *ldap* 
 {
-    org.eclipse.jetty.plus.jaas.spi.SimpleLdapLoginModule required
+    org.eclipse.jetty.plus.jaas.spi.SimpleLdapLoginModule required<br>
     ldapURL="ldap://10.10.10.10:389"
     bindDn="uid=admin,ou=admin_groups,dc=example,dc=com"
     bindPassword="xxx"
