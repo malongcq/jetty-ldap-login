@@ -1,6 +1,6 @@
 #simple configuration example
 
-1. Edit ldap-login.conf and put it into <jetty-home>/etc/
+1. Edit ldap-login.conf and put it into [jetty-home]/etc/
 _ldap-login.conf example:_
 *ldap* 
 {
@@ -21,7 +21,7 @@ _ldap-login.conf example:_
     roleObjectClass="groupOfUniqueNames";
 };
 
-2. Edit <jetty-home>/etc/jetty-jaas.xml
+2. Edit [jetty-home]/etc/jetty-jaas.xml
 
 
 
