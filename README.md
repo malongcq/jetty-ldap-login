@@ -1,7 +1,7 @@
-#simple configuration example
+###simple configuration example
 
-1. Edit ldap-login.conf and put it into [jetty-home]/etc/
-ldap-login.conf example:
+*1. Edit ldap-login.conf and put it into [jetty-home]/etc/
+*ldap-login.conf example:
 ```
 ldap
 {
@@ -21,7 +21,7 @@ ldap
     roleObjectClass="groupOfUniqueNames";
 };
 ```
-2. Edit [jetty-home]/etc/jetty-jaas.xml, add following lines:
+*2. Edit [jetty-home]/etc/jetty-jaas.xml, add following lines:
 ```
 <Call class="java.lang.System" name="setProperty">
  <Arg>java.security.auth.login.config</Arg>
