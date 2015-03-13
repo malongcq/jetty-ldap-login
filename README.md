@@ -1,8 +1,9 @@
 #simple configuration example
 
-1. Edit ldap-login.conf and put it into [jetty-home]/etc/<br>
-_ldap-login.conf example:_<br>
-*ldap* <br>
+1. Edit ldap-login.conf and put it into [jetty-home]/etc/
+ldap-login.conf example:
+```
+ldap
 {
     org.eclipse.jetty.plus.jaas.spi.SimpleLdapLoginModule required<br>
     ldapURL="ldap://10.10.10.10:389"<br>
@@ -18,10 +19,10 @@ _ldap-login.conf example:_<br>
     roleName="cn"<br>
     roleMember="uniqueMember"<br>
     roleObjectClass="groupOfUniqueNames";
-};<br>
-
-2. Edit [jetty-home]/etc/jetty-jaas.xml, add following lines:<br>
-
+};
+```
+2. Edit [jetty-home]/etc/jetty-jaas.xml, add following lines:
+```
 <Call class="java.lang.System" name="setProperty">
  <Arg>java.security.auth.login.config</Arg>
  <Arg><SystemProperty name="jetty.home" default="."/>/etc/login.conf</Arg>
@@ -35,3 +36,4 @@ _ldap-login.conf example:_<br>
     </New>
  </Arg>
 </Call>
+```
