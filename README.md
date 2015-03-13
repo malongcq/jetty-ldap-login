@@ -5,19 +5,19 @@
 ```
 ldap
 {
-    org.eclipse.jetty.plus.jaas.spi.SimpleLdapLoginModule required<br>
-    ldapURL="ldap://10.10.10.10:389"<br>
-    bindDn="uid=admin,ou=admin_groups,dc=example,dc=com"<br>
-    bindPassword="xxx"<br>
-    userBaseDn="ou=people,dc=example,dc=com"<br>
-    userId="uid"<br>
-    userPassword="userPassword"<br>
-    userObjectClass="inetOrgPerson"<br>
-    userRoleName="app"<br>
-    roleUserId="uid"<br>
-    roleBaseDn="ou=role_group,dc=example,dc=com"<br>
-    roleName="cn"<br>
-    roleMember="uniqueMember"<br>
+    org.eclipse.jetty.plus.jaas.spi.SimpleLdapLoginModule required
+    ldapURL="ldap://10.10.10.10:389"
+    bindDn="uid=admin,ou=admin_groups,dc=example,dc=com"
+    bindPassword="xxx"
+    userBaseDn="ou=people,dc=example,dc=com"
+    userId="uid"
+    userPassword="userPassword"
+    userObjectClass="inetOrgPerson"
+    userRoleName="app"
+    roleUserId="uid"
+    roleBaseDn="ou=role_group,dc=example,dc=com"
+    roleName="cn"
+    roleMember="uniqueMember"
     roleObjectClass="groupOfUniqueNames";
 };
 ```
